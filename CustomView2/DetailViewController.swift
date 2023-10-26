@@ -63,5 +63,8 @@ class DetailViewController: UIViewController {
         setBorder(myview: viewBgChooseFemale)
     }
     
-
+    @IBAction func tapAvatar(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
 }

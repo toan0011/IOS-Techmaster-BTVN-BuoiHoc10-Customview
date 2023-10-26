@@ -36,11 +36,15 @@ class ViewController: UIViewController {
         imgIconCommunity.layer.cornerRadius = 10
         viewBottom.layer.cornerRadius = 20
     }
+    
     @IBAction func tapPersonalData(_ sender: Any) {
-        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var detailView = mainStoryboard.instantiateViewController(identifier: "detailView") as! DetailViewController
+        detailView.modalPresentationStyle = .fullScreen
+        self.present(detailView, animated: true)
     }
     
-
+    
 
 }
 
